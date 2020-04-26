@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>derp cats</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction1() {
+      var popup = document.getElementById("myPopup1");
+      popup.classList.toggle("show1");
+    }
+
+    function myFunction2() {
+      var popup = document.getElementById("myPopup2");
+      popup.classList.toggle("show2");
+    }
+    </script>
+  </head>
+  <body>
+    <div class="topcontainer">
+    <header>
+      <h1>derp</h1>
+    </header>
+
+    <main>
+    <div class="grid">
+        <div id="cat1">
+          <h2>Omelette</h2>
+        <img src="./img/Omelette1.jpg" alt="Omelette du Furmage">
+        </div>
+        <div id="text1">
+          <div class="popup1" onclick="myFunction1()">
+            <img class="fishcat1" src="./SVG/fishcat.svg">
+            <span class="popuptext" id="myPopup1">meow</span>
+          </div>
+          <p>
+            <span class="subject">breed:</span>
+            <span class="answer">Persian</span><br>
+            <span class="subject">age:</span>
+            <span class="answer">ca 6years</span><br>
+            <span class="subject">adoption date:</span>
+            <span class="answer">16.02.16</span>
+          </p><br>
+          <p>
+             I adopted Omelette while I was living in Malta.<br>
+             He was very good company, while I was feeling homesick.<br>
+             Omelette's favourite spot in Malta was the balcony.<br>
+             He used to bask in the Maltese sun for hours, with some snack breaks. <br>
+             Now he is basically doing the same, but in Vienna.
+           </p>
+        </div>
+
+       <div id="text2">
+         <div class="popup2" onclick="myFunction2()">
+           <img class="fishcat2" src="./SVG/fishcat.svg">
+           <span class="popuptext" id="myPopup2">blep</span>
+         </div>
+           <p>
+             <span class="subject">breed:</span>
+             <span class="answer">Sibirian Mix</span> <br>
+             <span class="subject">age:</span>
+             <span class="answer">ca 2years</span><br>
+             <span class="subject">adoption date:</span>
+             <span class="answer">05.03.2020</span>
+           </p><br>
+           <p>
+           Since I work full time, I wanted to get a buddy for Omelette.<br>
+           Originally I didn't want another long haired cat, because the fur is everywhere! <br>
+           But then a friend of mine sent me a link to an adoption site.<br>
+           They had the most beautiful little cat, with gorgeous eyes.<br>
+           Those eyes are very special, because they don't work. Pepper is blind.<br>
+           She gets around just fine though, and only occasionally bumps into things.<br>
+           </p>
+        </div>
+        <div id="cat2">
+          <h2>Pepper Jack</h2>
+           <img src="./img/Pepper1.jpg" alt="Pepper Jack">
+        </div>
+    </div>
+    </main>
+  </div>
+  </body>
+</html>

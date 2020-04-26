@@ -1,0 +1,179 @@
+html{
+  height: 100%
+}
+
+body {
+  display: block;
+  margin: 0 100px 20px 100px;
+}
+
+.topcontainer {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Indie Flower;
+  color: #b44f6f;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-family: gill sans;
+  font-size: 30px;
+  color: #eac0d4;
+}
+
+p {
+  font-family: gill sans;
+  font-size: 20px;
+  color: #41363a;
+  margin: 0;
+}
+
+.subject {
+  font-family: gill sans;
+  font-size: 20px;
+  color: #b44f6f;
+}
+
+.answer {
+  font-family: gill sans;
+  font-size: 20px;
+  color: #41363a;
+}
+
+img {
+  height: 300px
+}
+
+.fishcat1 {
+  height: 150px;
+  transform: rotate(-20deg);
+}
+
+.fishcat2 {
+  height: 150px;
+  transform: rotate(20deg);
+}
+
+.middle {
+  height: 150px;
+  float:left;
+  transform: rotate(20deg);
+}
+
+.grid {
+  height: auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-template-areas: "box1 box2 box2"
+                       "box3 box3 box4"
+}
+
+#cat1{
+  grid-area: box1;
+  justify-self: start;
+  align-self: center;
+}
+
+#text1 {
+  grid-area: box2;
+  text-align: right;
+  justify-self: right;
+  align-self: end;
+}
+
+#text2 {
+  grid-area: box3;
+  justify-self: start;
+  align-self: end;
+}
+
+#cat2 {
+  grid-area: box4;
+  text-align: right;
+  justify-self: center;
+  align-self: end;
+}
+
+/* Popup1 container - can be anything you want */
+.popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext {
+  font-family: gill sans;
+  visibility: hidden;
+  color: #eac0d4;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  left: 50%;
+  margin-left: -40px;
+  transform: rotate(-20deg);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show1 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Popup2 container - can be anything you want */
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup2 .popuptext {
+  font-family: gill sans;
+  visibility: hidden;
+  color: #eac0d4;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%;
+  margin-left: -50px;
+  transform: rotate(20deg);
+  text-shadow: 1px 1px 1px #fff;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup2 .show2 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
